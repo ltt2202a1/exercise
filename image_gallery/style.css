@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.title {
+  padding: 50px 0;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 2rem;
+  background-image: linear-gradient(to right, rgb(32, 32, 131), pink);
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.wrapper {
+  background-color: white;
+  margin: 10px auto;
+  max-width: 1500px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  max-width: 300px;
+  margin: 20px 10px 50px 10px;
+  padding: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+img {
+  max-width: 100%;
+}
+.card-title {
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 5px 0;
+}
+.price {
+  padding: 5px 0;
+  text-align: right;
+  color: red;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card:hover {
+  transform: scale(1.01);
+}
