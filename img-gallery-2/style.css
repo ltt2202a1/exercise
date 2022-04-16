@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #12011a;
+}
+hr {
+  margin-top: 10px;
+  border: 3px solid rgba(8, 8, 8, 0.3);
+}
+.content {
+  margin: 5px;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.singer {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.singer > img {
+  width: 50px;
+  border-radius: 4px;
+  margin: 0 5px 0px 5px;
+}
+.title {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.singer-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.content {
+  margin: 5px 0;
+}
+.playlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.playlist {
+  width: 18%;
+  margin: 5px;
+}
+.img-playlist {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.playlist-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.playlist-singer {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+h3 {
+  color: #ffffff;
+  margin: 10px 0;
+}
