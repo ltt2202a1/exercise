@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica Neue";
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+.class i {
+  color: gray;
+  margin-left: 5px;
+}
+iframe {
+  width: 100%;
+}
+span {
+  color: gray;
+  margin-left: 5px;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.content {
+  display: flex;
+}
+.breadcrum a {
+  color: black;
+}
+.breadcrum span {
+  margin: 0 10px;
+}
+.content__right {
+  width: 60%;
+}
+.class {
+  display: flex;
+  margin: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.class__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 24px 0;
+  width: calc(100% - 160px);
+}
+.class-title a {
+  font-size: 20.8px;
+  color: black;
+}
+.class-title a:hover {
+  text-decoration: underline;
+}
+.timetable {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 80%;
+  padding-bottom: 5px;
+}
+.btn-register {
+  padding: 7px;
+  border-top: 1px solid gray;
+}
+.btn-register a {
+  color: #3c78e8;
+  display: block;
+}
+
+.class__time {
+  width: 160px;
+  min-height: 160px;
+}
+.class__item {
+  text-align: center;
+  color: white;
+}
+.class__item--year {
+  padding: 3px;
+}
+.class__item--date {
+  font-size: 40px;
+  padding-top: 25px;
+}
+
+.content__left {
+  width: 40%;
+  margin-left: 10px;
+}
+.time--orange {
+  background-color: #fe6d3f;
+}
+.year--orange {
+  background-color: #ef5321;
+}
+.time--blue {
+  background-color: #4b96f2;
+}
+.year--blue {
+  background-color: #2682f2;
+}
+.time--wellow {
+  background-color: #fbbc05;
+}
+.year--wellow {
+  background-color: #f89707;
+}
+.content-title {
+  margin: 20px 0;
+}
