@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #5d677a;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 0 10px;
+  border-bottom: 1px solid #5d677a;
+}
+.logo img {
+  width: 80%;
+  padding: 10px 0;
+}
+.header__right {
+  display: flex;
+}
+.nav {
+  display: flex;
+}
+.nav__item {
+  position: relative;
+  padding: 0 5px;
+  line-height: 60px;
+  border-bottom: 5px solid white;
+  transition: border 0.2s;
+}
+.nav-user__item {
+  padding: 0 10px;
+}
+.nav-user__item.login {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.nav-user__item.register {
+  border-right: 1px solid gray;
+}
+.nav-user {
+  display: flex;
+  align-items: center;
+}
+.login {
+  padding: 0 10px;
+}
+.recruiter-menu {
+  padding: 15px 20px;
+  background: #182642;
+  cursor: pointer;
+  position: relative;
+}
+.recruiter-menu h4 {
+  color: white;
+}
+.recruiter-menu p {
+  color: #5d677a;
+}
+
+.nav__item:hover {
+  border-bottom: 5px solid #1f54bc;
+}
+.dropdown-item {
+  line-height: 16px;
+  width: 200px;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-align: left;
+}
+.bav__item-dropdown {
+  display: none;
+  position: absolute;
+  bottom: -120%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 555;
+}
+.nav__item.dropdown:hover .bav__item-dropdown {
+  display: block;
+}
+.recruiter__item-dropdown {
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  bottom: -220%;
+  z-index: 555;
+}
+.recruiter-menu:hover .recruiter__item-dropdown {
+  display: block;
+}
+.heading-tool input {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 3px solid gray;
+  margin: 0 5px;
+}
+.heading-tool {
+  padding: 10px 0;
+  background-color: #fbfbfb;
+  border: 1px solid #e5e5e5;
+}
+.submit {
+  background-image: linear-gradient(to right, #86cb49, #169b74, #86cb49);
+  background-position: 100% 100%;
+  color: #fff;
+  padding: 10px 12px;
+  border: 0px;
+  border-radius: 5px;
+}
+.exit-btn {
+  cursor: pointer;
+}
+.heading-tool__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+input:focus {
+  outline: 0;
+  border: 3px solid green;
+}
+.advanced-filter-container {
+  position: relative;
+}
+.advanced-filter {
+  padding: 10px 50px 30px;
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+  background-color: white;
+}
+.form-select label {
+  display: block;
+  color: #5d677a;
+  margin-bottom: 10px;
+}
+.form-select-container {
+  display: flex;
+  justify-content: space-between;
+}
+.form-select {
+  width: 15%;
+}
+.form-select select {
+  outline: 0;
+  border: 3px solid gray;
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+}
+.form-select select:focus {
+  outline: 0;
+  border: 3px solid green;
+}
+.advanced-filter-choice {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-advanced-filter {
+  padding: 7px 25px;
+  margin: 10px;
+  background-image: linear-gradient(to right, #86cb49, #169b74, #86cb49);
+  background-position: 100% 100%;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 0px;
+}
+#btn-filter {
+  cursor: pointer;
+  margin: 10px;
+}
+button {
+  cursor: pointer;
+}
+.job {
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+.job a {
+  display: flex;
+}
+.job__info {
+  padding-left: 20px;
+}
+.job__name {
+  color: black;
+}
+.job-found {
+  padding: 10px;
+}
+.job__thumnal {
+  width: 150px;
+}
+.job__thumnal img {
+  max-width: 100%;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header__right">
+        <div class="logo">
+          <img
+            src="https://static.careerbuilder.vn/themes/careerbuilder/img/logo.png"
+            alt=""
+          />
+        </div>
+        <div class="nav">
+          <div class="nav__item dropdown">
+            <a href="#">Tìm Việc Làm</a>
+            <div class="bav__item-dropdown">
+              <div class="dropdown-item">Việc làm mới</div>
+              <div class="dropdown-item">ngành nghề / Địa điểm</div>
+            </div>
+          </div>
+
+          <a href="#">
+            <div class="nav__item">CV Hay</div>
+          </a>
+          <a href="#"> <div class="nav__item">VietNamSalary</div></a>
+          <a href="#"> <div class="nav__item">CareerMap</div></a>
+          <a href="#"> <div class="nav__item">Cẩm nang</div></a>
+          <a href="#"> <div class="nav__item">Tính lương</div></a>
+        </div>
+      </div>
+      <div class="header__left">
+        <div class="nav-user">
+          <a href="#">
+            <div class="nav-user__item notification">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="nav-user__item login">
+              <i class="fa-solid fa-circle-user"></i>
+              <span> Đăng nhập</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="nav-user__item register">Đăng kí</div>
+          </a>
+          <a href="#">
+            <div class="nav-user__item lang">
+              <span>VI</span><i class="fa-solid fa-angle-down"></i>
+            </div>
+          </a>
+          <div class="recruiter-menu">
+            <h4>
+              Dành cho nhà tuyển dụng
+              <i class="fa-solid fa-angle-down"></i>
+            </h4>
+            <p>Đăng tuyển, Tìm ứng viên</p>
+            <div class="recruiter__item-dropdown">
+              <div class="dropdown-item">Đăng nhập</div>
+              <div class="dropdown-item">Đăng kí tuyển dụng</div>
+              <div class="dropdown-item">Tìm ứng viên</div>
+              <div class="dropdown-item">Sản phẩm dịch vụ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="heading-tool">
+      <div class="heading-tool__wrapper">
+        <input
+          type="text"
+          name="job"
+          id="job"
+          placeholder="Chức năng, Kỹ năng, Tên Công ty"
+          size="50"
+        />
+        <input
+          type="text"
+          name="career"
+          id="career"
+          placeholder="Tất cả ngành nghề"
+        />
+        <input
+          type="text"
+          name="local"
+          id="local"
+          placeholder="Tất cả địa điểm"
+        />
+        <button class="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <span id="btn-filter">
+          <i class="fa-solid fa-filter fa-lg"></i>
+        </span>
+      </div>
+      <div class="advanced-filter-container">
+        <div class="advanced-filter">
+          <div class="form-select-container">
+            <div class="form-select">
+              <label for="salary">Mức lương</label>
+              <select name="salary" id="salary">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="5000000">Dưới 5tr</option>
+                <option value="10000000">Dưới 10tr</option>
+              </select>
+            </div>
+            <div class="form-select">
+              <label for="salary">Cấp bậc</label>
+              <select name="level" id="level">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="Nhân viên">Nhân viên</option>
+                <option value="Quản lý">Quản lý</option>
+                <option value="Thực tập sinh">Thực tập sinh</option>
+              </select>
+            </div>
+            <div class="form-select">
+              <label for="salary">Đăng trong vòng</label>
+              <select name="time" id="time">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="7">7 ngày gần đây</option>
+                <option value="3">3 ngày gần đây</option>
+              </select>
+            </div>
+            <div class="form-select">
+              <label for="salary">Hình thức làm</label>
+              <select name="status" id="status">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="Thực tập">Thực tập</option>
+                <option value="Nhân viên chính thức">
+                  Nhân viên chính thức
+                </option>
+              </select>
+            </div>
+            <div class="form-select">
+              <label for="salary">Phúc lợi mong muốn</label>
+              <select name="benefit" id="benefit">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="Chế độ bảo hiểm">Chế độ bảo hiểm</option>
+                <option value="Du lịch">Du lịch</option>
+              </select>
+            </div>
+            <span class="exit-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+          <div class="advanced-filter-choice">
+            <button class="btn-advanced-filter search">Tìm kiếm</button>
+            <button class="btn-advanced-filter reset">Xóa bộ lọc</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="job-found"></h2>
+    <div class="job-container"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
