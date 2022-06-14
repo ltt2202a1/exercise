@@ -92,8 +92,8 @@ submit.addEventListener("click", () => {
     console.log(jobSelect.value);
     return (
       (!jobSelect.value ||
-        job.jobName.includes(jobSelect.value) ||
-        job.company.includes(jobSelect.value)) &&
+        job.jobName.toLowerCase().includes(jobSelect.value.toLowerCase()) ||
+        job.company.toLowerCase().includes(jobSelect.value.toLowerCase())) &&
       (!careerSelect.value || job.career.includes(careerSelect.value)) &&
       (!localSelect.value || job.local.includes(localSelect.value))
     );
