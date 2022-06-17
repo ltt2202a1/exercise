@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        justify-content: space-between;
+      }
+      .change-form {
+        display: none;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>description</th>
+            <th>pice</th>
+            <th>action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <div class="modal">
+      <form class="change-form">
+        <h1>CHANGE PRODUCT</h1>
+        <table>
+          <tr>
+            <td><label for="name-change">name </label></td>
+            <td><input type="text" name="name-change" id="name-change" /></td>
+          </tr>
+          <tr>
+            <td><label for="price-change">price</label></td>
+            <td>
+              <input type="number" name="price-change" id="price-change" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="description-change">description</label></td>
+            <td>
+              <input
+                type="text"
+                name="description-change"
+                id="description-change"
+              />
+            </td>
+          </tr>
+        </table>
+        <button type="submit">OK</button>
+      </form>
+      <form class="add-form">
+        <h1>ADD PRODUCT</h1>
+        <table>
+          <tr>
+            <td><label for="name">name</label></td>
+            <td><input type="text" name="name" id="name" /></td>
+          </tr>
+          <tr>
+            <td><label for="">price</label></td>
+            <td><input type="number" name="price" id="price" /></td>
+          </tr>
+          <tr>
+            <td><label for="description">description</label></td>
+            <td><input type="text" name="description" id="description" /></td>
+          </tr>
+        </table>
+        <button type="submit">OK</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
